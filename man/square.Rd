@@ -4,10 +4,12 @@
 \alias{square}
 \title{Square a vector}
 \usage{
-square(x)
+square(x, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be squared.}
+
+\item{na.omit}{Whether or not to remove NAs, the default is FALSE.}
 }
 \value{
 A vector that is the square of \code{x}.

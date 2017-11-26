@@ -4,10 +4,12 @@
 \alias{cube}
 \title{Cube a vector}
 \usage{
-cube(x)
+cube(x, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be cubed.}
+
+\item{na.omit}{Whether or not to remove NAs, the default is FALSE.}
 }
 \value{
 A vector that is the cube of \code{x}.

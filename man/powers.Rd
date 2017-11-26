@@ -4,7 +4,18 @@
 \name{powers}
 \alias{powers}
 \alias{powers-package}
-\title{powers.}
+\title{Convenient Computation of Powers}
 \description{
-powers.
+Are you tired of using the power operator, \code{^} or \code{**} in R?
+Use this package to call functions that apply common powers
+and transformations to your vectors.
+}
+\details{
+There are four functions in this package: square(), cube(), box_cox() and my_log().
+}
+\note{
+This package is for learning purpose.
+}
+\author{
+Xinzhe Dong
 }

@@ -3,9 +3,9 @@ Type: Package
 Title: simple computation of powers
 Version: 0.1.0
 Author: this is Xinzhe Dong
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Xinzhe Dong <dongxz19941214@gmail.com>
+Description: This package has four exported functions: square(), cube(), box_cox() and my_log().
+    There is one internal function pow() which these four functions depend on.
 License: License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

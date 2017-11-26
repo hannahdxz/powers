@@ -4,12 +4,14 @@
 \alias{pow}
 \title{Power a vector}
 \usage{
-pow(x, a)
+pow(x, a, na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be powered.}
 
 \item{a}{The power.}
+
+\item{na.omit}{Whether or not to remove NAs, the default is FALSE.}
 }
 \value{
 A vector that is the power a of \code{x}.
@@ -20,8 +22,8 @@ This is an internal function.
 \details{
 This function isn't complicated.
 
-And it almost certainly doesn't need two paragraphs in the "Details"
-section!
+This function requires the input to be numeric,
+when it is not, an "invalid input" message will appear.
 
 Here are some reasons why putting a list in this section is excessive:
 \itemize{

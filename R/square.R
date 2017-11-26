@@ -4,6 +4,8 @@
 #'
 #' @param x The vector to be squared.
 #'
+#' @param na.omit Whether or not to remove NAs, the default is FALSE.
+#'
 #' @return A vector that is the square of \code{x}.
 #'
 #' @details
@@ -23,7 +25,7 @@
 #' square(-5)
 #' @export
 
-square <- function(x) pow(x,2)
+square <- function(x,na.omit=FALSE) pow(x,2,na.omit)
 
 # helper packages
 # roxygen2
