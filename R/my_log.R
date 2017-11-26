@@ -43,7 +43,7 @@ my_log <- function(x,base,na.omit=FALSE){
 
     if (x[i]>=0){
 
-    if (x[i] <= pow(base,100,na.omit && x[i] >= pow(base,-100,na.omit))){
+    if (x[i] <= pow(base,100,na.omit) && x[i] >= pow(base,-100,na.omit)){
   s <- seq(from=-100, to=100, by = 0.0001)
   a <- pow(base,s,na.omit)
   result[i] <- s[which.min(abs(a-x[i]))]
@@ -54,7 +54,7 @@ my_log <- function(x,base,na.omit=FALSE){
     }
     }
     else{
-      return("x needs to be larger than 0")
+      return("x needs to be greater than or equal to 0")
     }
     }
     }

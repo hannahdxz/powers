@@ -29,5 +29,5 @@ test_that("can not calculate x > base^100", {
 
 test_that("x>=0", {
   num_vec <- c(0, -4.6, 9)
-  expect_equal(my_log(num_vec,1.5), "x needs to be larger than 0")
+  expect_equal(my_log(num_vec,1.5), "x needs to be greater than or equal to 0")
 })
