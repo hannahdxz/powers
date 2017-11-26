@@ -6,8 +6,8 @@
 #'
 #' @param lambda1 The first parameter of the transformation, range from -5 to 5.
 #'
-#' @param lambda2 The second parameter of the transformation, lambda2 in introduced for negative
-#' values of y, lambda2 is greater than -y.
+#' @param lambda2 The second parameter of the transformation, lambda2 is introduced for negative
+#' values of y. lambda2 must be greater than -y.
 #'
 #' @param na.omit Whether or not to remove NAs, the default is FALSE.
 #'
@@ -16,12 +16,7 @@
 #' @details
 #' This function calculate the box cox transform of a vector.
 #'
-#'
-#' Here are some reasons why putting a list in this section is excessive:
-#' \itemize{
-#'      \item This \code{box_cox} function is quite simple.
-#'      \item The \code{box_cox} is used to transform non-normal dependent variables into a normal shape.
-#' }
+#' The \code{box_cox} is used to transform non-normal dependent variables into a normal shape.
 #'
 #' @examples
 #' box_cox(5:10,2,6)

@@ -12,6 +12,8 @@ and transformations to your vectors.
 }
 \details{
 There are four functions in this package: square(), cube(), box_cox() and my_log().
+
+This package works only for numerical inputs.
 }
 \note{
 This package is for learning purpose.

@@ -22,13 +22,8 @@ This function perform log transformation.
 \details{
 This function calculate the log transform of a vector.
 
-This function can only calculate the log transformation of base^(-100) <= x <= base^100
-
-Here are some reasons why putting a list in this section is excessive:
-\itemize{
-     \item This \code{log} function is quite simple.
-     \item The \code{log} is used to perform log transformation.
-}
+This function can only calculate the log transformation of x in the range:
+base^(-100) <= x <= base^100
 }
 \examples{
 my_log(7,2)

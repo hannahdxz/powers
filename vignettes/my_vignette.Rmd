@@ -25,7 +25,7 @@ box_cox(num_vec,4,6)
 my_log(num_vec,2)
 ```
 
-`apply`-family friendly, too!
+The `square()` and `cube()` functions are `apply`-family friendly, too!
 
 ```{r}
 my_list <- list(1:10, 0.5, -0.7)
@@ -36,11 +36,14 @@ lapply(my_list, square)
 lapply(my_list, cube)
 ```
 
-It even comes with the ability to omit NA!
+They even comes with the ability to omit NA!
 
 ```{r}
 num_vec <- c(1:10,NA)
 square(num_vec,na.omit = TRUE)
+cube(num_vec,na.omit = TRUE)
+box_cox(num_vec,4,6,na.omit = TRUE)
+my_log(num_vec,2,na.omit = TRUE)
 ```
 
 Wow!!!
