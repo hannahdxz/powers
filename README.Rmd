@@ -91,7 +91,7 @@ num_vec2 <- c(0, -4.6, 3.4, "a")
 box_cox(num_vec2,4,6)
 ```
 
-**(4)** The function`my_log(x,base,na.omit=FALSE)` perform log transformation.
+**(4)** The function`my_log(x,base=exp(1),na.omit=FALSE)` perform log transformation.
 
 * `x` is the vector to be transformed. x>=0
 

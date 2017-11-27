@@ -85,7 +85,7 @@ box_cox(num_vec2,4,6)
 #> [1] "invalid input"
 ```
 
-**(4)** The function`my_log(x,base,na.omit=FALSE)` perform log transformation.
+**(4)** The function`my_log(x,base=exp(1),na.omit=FALSE)` perform log transformation.
 
 -   `x` is the vector to be transformed. x&gt;=0
 
