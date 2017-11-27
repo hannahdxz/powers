@@ -96,6 +96,8 @@ box_cox(num_vec2,4,6)
 -   Note: This function can only calculate the log transformation of x in the range: base^(-100) &lt;= x &lt;= base^100
 
 ``` r
+my_log(exp(7))
+#> [1] 7
 num_vec <- c(0, 8,64,NA)
 my_log(num_vec,2) # not omit NA
 #> [1]  0  3  6 NA
