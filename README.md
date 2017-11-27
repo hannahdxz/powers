@@ -100,10 +100,10 @@ my_log(exp(7))
 #> [1] 7
 num_vec <- c(0, 8,64,NA)
 my_log(num_vec,2) # not omit NA
-#> [1]  0  3  6 NA
+#> [1] -Inf    3    6   NA
 
 my_log(num_vec,2, na.omit = TRUE) # omit NA
-#> [1] 0 3 6
+#> [1] -Inf    3    6
 
 num_vec1 <- c(0, 4.6, 900000000000000000)
 my_log(num_vec1,1.5) # can not calculate x > base^100
