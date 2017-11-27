@@ -6,7 +6,7 @@ The goal of the `powers` package is to perform basic computations on numerical v
 
 This package has four exported functions: [`square()`](https://github.com/hannahdxz/powers/blob/master/R/square.R), [`cube()`](https://github.com/hannahdxz/powers/blob/master/R/cube.R), [`box_cox()`](https://github.com/hannahdxz/powers/blob/master/R/box%20cox.R) and [`my_log()`](https://github.com/hannahdxz/powers/blob/master/R/my_log.R). There is one internal function [`pow()`](https://github.com/hannahdxz/powers/blob/master/R/pow.R) which these four functions depend on.
 
-These fours fucntions only work for numerical input. When the input is of other type, an "invalid input" message will be returned.
+These four functions only work for numerical input. When the input is of other type, an "invalid input" message will be returned.
 
 ### Description & Examples
 
@@ -44,6 +44,7 @@ square(num_vec2)
 -   `na.omit` is whether or not to remove NAs, the default is FALSE.
 
 ``` r
+num_vec <- c(0, -4.6, 3.4, NA)
 cube(num_vec)
 #> [1]   0.000 -97.336  39.304      NA
 
@@ -55,7 +56,7 @@ cube(num_vec2)
 #> [1] "invalid input"
 ```
 
-**(3)** The function`box_cox(y, lambda1, lambda2, na.omit)` calculate the box cox transform of a vector. Here is the formula of the transformation: ![cox box](https://user-images.githubusercontent.com/31666152/33244401-2e663790-d2ab-11e7-8273-ac8e4bc25d50.png) *(formula source: wikipedia)*
+**(3)** The function`box_cox(y, lambda1, lambda2, na.omit)` calculate the box cox transform of a vector. Here is the formula of the transformation: ![cox box](https://user-images.githubusercontent.com/31666152/33244401-2e663790-d2ab-11e7-8273-ac8e4bc25d50.png) *(formula source: [wikipedia](https://en.wikipedia.org/wiki/Power_transform#Box.E2.80.93Cox_transformation))*
 
 -   `y` is the vector to be transformed.
 
