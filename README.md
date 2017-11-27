@@ -4,7 +4,9 @@ powers
 
 The goal of the `powers` package is to perform basic computations on numerical vectors.
 
-This package has four exported functions: `square()`, `cube()`, `box_cox()` and `my_log()`. There is one internal function `pow()` which these four functions depend on. These fours fucntions only work for numerical input.
+This package has four exported functions: [`square()`](https://github.com/hannahdxz/powers/blob/master/R/square.R), [`cube()`](https://github.com/hannahdxz/powers/blob/master/R/cube.R), [`box_cox()`](https://github.com/hannahdxz/powers/blob/master/R/box%20cox.R) and [`my_log()`](https://github.com/hannahdxz/powers/blob/master/R/my_log.R). There is one internal function [`pow()`](https://github.com/hannahdxz/powers/blob/master/R/pow.R) which these four functions depend on.
+
+These fours fucntions only work for numerical input. When the input is of other type, an "invalid input" message will be returned.
 
 ### Description & Examples
 
@@ -16,7 +18,7 @@ First, load my `powers` package.
 library(powers)
 ```
 
-**(1)** The function`square(x,na.omit)` squares a vector.
+**(1)** The function `square(x,na.omit)` squares a vector.
 
 -   `x` is the vector to be squared.
 
@@ -53,9 +55,7 @@ cube(num_vec2)
 #> [1] "invalid input"
 ```
 
-**(3)** The function`box_cox(y, lambda1, lambda2, na.omit)` calculate the box cox transform of a vector. Here is the formula of the transformation:
-
-![cox box](https://user-images.githubusercontent.com/31666152/33244401-2e663790-d2ab-11e7-8273-ac8e4bc25d50.png) *(formula source: wikipedia)*
+**(3)** The function`box_cox(y, lambda1, lambda2, na.omit)` calculate the box cox transform of a vector. Here is the formula of the transformation: ![cox box](https://user-images.githubusercontent.com/31666152/33244401-2e663790-d2ab-11e7-8273-ac8e4bc25d50.png) *(formula source: wikipedia)*
 
 -   `y` is the vector to be transformed.
 
@@ -106,7 +106,7 @@ num_vec1 <- c(0, 4.6, 900000000000000000)
 my_log(num_vec1,1.5) # can not calculate x > base^100
 #> [1] "can not calculate"
 
-my_log(-10,2) # x needs to be greater than or equal to 0
+my_log(-10,2) # x can not be negative
 #> [1] "x needs to be greater than or equal to 0"
 
 num_vec2 <- c(0, -4.6, 3.4, "a")
