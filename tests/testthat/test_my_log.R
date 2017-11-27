@@ -2,9 +2,9 @@ context("perform log transformation on numerics")
 
 test_that("numeric values work.", {
   num_vec <- c(0, 8,64)
-  expect_identical(my_log(num_vec,2), c(0,3,6))
+  expect_identical(my_log(num_vec,2), c(-Inf,3,6))
   expect_identical(my_log(exp(7)), 7)
-  expect_identical(my_log(0,2), 0)
+  expect_identical(my_log(0,2), -Inf)
 })
 
 test_that("NA removed successfully", {

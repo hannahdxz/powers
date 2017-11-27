@@ -33,7 +33,7 @@ my_log <- function(x,base=exp(1),na.omit=FALSE){
       result[i] <- NA}
     else{
       if(x[i]==0){
-        result[i] <- 0}
+        result[i] <- -Inf}
       else{
 
     if (x[i]>=0){
