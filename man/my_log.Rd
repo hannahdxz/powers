@@ -14,7 +14,7 @@ my_log(x, base, na.omit = FALSE)
 \item{na.omit}{Whether or not to remove NAs, the default is FALSE.}
 }
 \value{
-A vector that is the log transformation of \code{y}.
+A vector that is the log transformation of \code{x}.
 }
 \description{
 This function perform log transformation.

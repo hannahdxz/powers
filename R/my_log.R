@@ -8,7 +8,7 @@
 #'
 #' @param na.omit Whether or not to remove NAs, the default is FALSE.
 #'
-#' @return A vector that is the log transformation of \code{y}.
+#' @return A vector that is the log transformation of \code{x}.
 #'
 #' @details
 #' This function calculate the log transform of a vector.
