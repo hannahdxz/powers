@@ -4,12 +4,12 @@
 \alias{my_log}
 \title{Log transformation}
 \usage{
-my_log(x, base, na.omit = FALSE)
+my_log(x, base = exp(1), na.omit = FALSE)
 }
 \arguments{
 \item{x}{The vector to be transformed. x>=0}
 
-\item{base}{The base of the log transformation}
+\item{base}{The base of the log transformation, the default is exp(1)}
 
 \item{na.omit}{Whether or not to remove NAs, the default is FALSE.}
 }

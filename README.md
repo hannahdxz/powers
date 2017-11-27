@@ -89,7 +89,7 @@ box_cox(num_vec2,4,6)
 
 -   `x` is the vector to be transformed. x&gt;=0
 
--   `base` is the base of the log transformation
+-   `base` is the base of the log transformation, the default is exp(1)
 
 -   `na.omit` is whether or not to remove NAs, the default is FALSE.
 

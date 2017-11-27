@@ -4,7 +4,7 @@
 #'
 #' @param x The vector to be transformed. x>=0
 #'
-#' @param base The base of the log transformation
+#' @param base The base of the log transformation, the default is exp(1)
 #'
 #' @param na.omit Whether or not to remove NAs, the default is FALSE.
 #'
@@ -22,7 +22,7 @@
 #' @export
 #'
 
-my_log <- function(x,base,na.omit=FALSE){
+my_log <- function(x,base=exp(1),na.omit=FALSE){
   if (is.numeric(x) && is.numeric(base)){
 
   result <- rep(NA, length(x))
